@@ -3,7 +3,7 @@ status = "";
 objects = [];
 
 function preload(){
-img = loadImage('IMG_4903.jpg');
+img = loadImage('IMG_2725.jpg');
 }
 
 
@@ -30,10 +30,10 @@ for(i=0;i<objects.length;i++){
 
     fill("#ff0000");
     percent = floor(objects[i].confidence*100);
-    text(objects[i].label + " " + percent + "%", objects[i].x-250, objects[i].y);
+    text(objects[i].label + " " + percent + "%", objects[i].x, objects[i].y);
     noFill();
     stroke("#ff0000");
-    rect(objects[i].x-300, objects[i].y, objects[i].width-500, objects[i].height);
+    rect(objects[i].x, objects[i].y, objects[i].width, objects[i].height);
 }
 }
 }
